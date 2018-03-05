@@ -1,0 +1,45 @@
+<nav class="navbar navbar-default ">
+    <div class="container-fluid">
+  
+          
+      <div class="navbar-header">
+        <a class="navbar-brand">OpenBanking </a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <p class="navbar-text navbar-right">Demo: <a href="#" class="navbar-link">PSD2 </a></p>
+      
+    </div>
+    </div>
+  
+  </nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <ul class="nav nav-tabs">
+        <li role="presentation"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">
+          <a routerLink="/">Home</a>
+        </li>
+        <li role="presentation"
+            routerLinkActive="active">
+          <a routerLink="aisp">AISP</a>
+        </li>
+        <li role="presentation"
+            routerLinkActive="active">
+          <a routerLink="analytics">Analytics</a>
+        </li>
+        <li role="presentation"
+            routerLinkActive="active">
+           <a routerLink="settings">Settings</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

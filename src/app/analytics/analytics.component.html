@@ -1,0 +1,16 @@
+
+<div>
+  <div class="form-group">
+    <label for="name">Analytics link : </label><input
+      type="text"
+      id="analyticsLink"
+      class="form-control"
+      [(ngModel)]="analyticsLink">
+  </div><button
+    class="btn btn-primary"
+    (click)="onUpdateLink()">Update Link</button>
+</div>
+<hr>
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe  src="https://eu.apiconnect.ibmcloud.com/v1/kibana/share-kibana#/dashboard/tpp-default?embed=true&_g=(catalogId%3A'5a7d838e0cf282db979a3803'%2CcatalogName%3ASandbox%2CorgId%3A'5a7d838d0cf282db979a37f7'%2CrefreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow%2Fw%2Cmode%3Aquick%2Cto%3Anow%2Fw))" height="600" width="800"></iframe>
+</div>

@@ -1,0 +1,74 @@
+
+<div class="container">
+
+<div class="panel-body">
+  <h4>Enrollment of the TPP-AISP to obtain its authorization code for the client (PSU)  </h4>
+    <div class="media-left media-middle"> 
+        <img class="media-object" src="../../assets/aisp1.gif">
+    </div>
+  <hr>
+  <a [href]="url">Authorize</a>
+</div>
+
+
+<div class="panel panel-default">
+  <div class="panel-body">
+      <b>Grant code :</b><br> {{code}}
+  </div>
+</div>
+
+</div>
+
+<div class="container" *ngIf="code" >
+  
+ <div class="panel-body">
+  <h4>TPP-AISP obtains access token Oauth for PSU    </h4>
+  <div class="media-left media-middle"> 
+      <img class="media-object" src="../../assets/aisp2.gif">
+  </div>
+  <hr>
+  <button class="btn btn-primary" (click)="getToken()">Generate access token</button>
+</div>
+<div class="alert alert-danger" role="alert" *ngIf="error && step==1">{{error}}</div>
+
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <b>Token :</b><br>
+      <pre>{{token | json : 12}}</pre>
+    </div>
+  </div>
+  <div class="panel-body">
+      <button class="btn btn-primary" (click)="getIntrospectToken()">Introspect token</button>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="error && step==2">{{error}}</div>
+  
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <b>Token :</b><br>
+        <pre>{{itoken | json : 12}}</pre>
+      </div>
+    </div>
+ </div>
+
+
+
+  <div class="container" *ngIf="token" >
+    
+    <div class="panel-body">
+      <h4>TPP-AISP list of accounts for PSU</h4>
+      <div class="media-left media-middle"> 
+          <img class="media-object" src="../../assets/aisp3.gif">
+      </div>
+      <hr>
+      <button class="btn btn-primary" (click)="getAccounts()">List of accounts</button>
+
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf="error && step==3">{{error}}</div>
+    
+    <div class="panel panel-default">
+        <div class="panel-body">
+          <b>Accounts :</b><br>
+          <pre>{{accounts | json : 12}}</pre>
+        </div>
+      </div>
+    </div>
