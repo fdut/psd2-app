@@ -1,12 +1,22 @@
-# Psd2App
+# Psd2 App
 
-This is a sample of a Web app using Openbanking PSD2 api powered by IBM API Connect available here : [
+This is a sample of a Web app using Open Banking PSD2 Api powered by IBM API Connect available here : [
 Payments and Accounts 1.0.0 ](https://open-banking-sandbox.developer.eu.apiconnect.ibmcloud.com/node/378) 
 
 
 ![App Screenshot](./src/assets/demoaisp.gif)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
+
+## Initial Task
+
+Install npm, Angular 5.x
+
+Update dependencies
+
+```
+  npm install
+```
 
 ## Test Application
 
