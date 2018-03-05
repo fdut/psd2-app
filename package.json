@@ -1,6 +1,6 @@
 {
-  "name": "dsp2-app",
-  "version": "0.0.0",
+  "name": "psd2-app",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
