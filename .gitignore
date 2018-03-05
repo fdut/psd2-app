@@ -42,4 +42,4 @@ testem.log
 Thumbs.db
 
 # value to hide
-/src/app/api.endpoints.ts
+src/app/api.endpoints.ts
