@@ -4,7 +4,7 @@ This is a sample of a Web app using Open Banking PSD2 Api powered by IBM API Con
 Payments and Accounts 1.0.0 ](https://open-banking-sandbox.developer.eu.apiconnect.ibmcloud.com/node/378) 
 
 
-![App Screenshot](./src/assets/demoaisp.gif)
+![App Screenshot](./ressources/demoaisp.gif)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
 
