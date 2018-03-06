@@ -12,7 +12,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Install npm, Angular 5.x
 
-Update dependencies
+Launch the following command to update dependencies :
 
 ```
   npm install
@@ -42,12 +42,9 @@ In the AISP page follow all the step of AISP use case :
 1. Clic `Authorize`
 2. Clic `Generate Access Code`
 3. Clic `Introspect token`
-4. Clic `List of accounts``
+4. Clic `List of accounts`
 
 In the setting page, you have a summary of use value used for authentication.
 
 In the Analytics page, there is an embedded `Analytics Dasboard` (You need to have access to it, to see it)
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
