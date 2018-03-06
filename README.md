@@ -34,6 +34,20 @@ export default
 
 Run `ng serve` in this folder for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+In the Home page, clic on the button :
+"`Go to AISP Use Case`"
+
+In the AISP page follow all the step of AISP use case :
+
+1. Clic `Authorize`
+2. Clic `Generate Access Code`
+3. Clic `Introspect token`
+4. Clic `List of accounts``
+
+In the setting page, you have a summary of use value used for authentication.
+
+In the Analytics page, there is an embedded `Analytics Dasboard` (You need to have access to it, to see it)
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
