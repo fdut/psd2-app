@@ -3,12 +3,13 @@ import { Injectable } from "@angular/core";
 import { Http, Headers } from "@angular/http";
 import 'rxjs/Rx';
 
-import apiproperties from "./api.endpoints"
+import apiproperties from "./api.endpoints";
+import { environment } from '../environments/environment';
 
 @Injectable()
 export class AuthService {
 
-    private authprops: {clientid: string, clientsecret: string, apicEndpoint: string, redirectUri:string};
+    private authprops: {clientid: string, clientsecret: string, apicEndpoint: string, redirectUri:string };
 
     private grantcode: string;
     private tokens: Token;
@@ -16,6 +17,8 @@ export class AuthService {
     private id_token: string;
     private scope : string;
     private expire_in: number;
+
+    private version: string = environment.VERSION;
    
     constructor(private http: Http) {
         this.authprops = apiproperties;
@@ -111,5 +114,10 @@ export class AuthService {
     // getapicEndpoint : return apic endpoint
     getredirectUri(){
         return this.authprops.redirectUri;
+    }
+
+    // return version of this webapp
+    getwebappversion(){
+        return this.version;
     }
 }
